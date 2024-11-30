@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    background-color: #000;
+    color: #fff; 
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header #phone_number{
+    text-align: left;
+    margin-left: 15px;
+
+}
+.header #email{
+    text-align: right;
+    margin-right: 15px; 
+}
+.header span{
+    font-size: large;
+}
+.navbar {
+    display: flex;
+    height: 30px; 
+    background-color: aliceblue;
+    justify-content: flex-end;
+}
+.navbar ul {     
+    padding: 0px 40px; 
+    display: flex; 
+    align-items: center;
+    text-align: right;
+}
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+    text-align: right;
+} 
+
+body {
+    background-image: url('https://purepng.com/public/uploads/large/businessman-bow.png');
+    background-repeat: no-repeat;  
+    background-position-x: right;
+    background-size: 700px;
+    background-color: rgb(92, 194, 241);
+    }
+
+.company_name{
+        margin-left: 30px;
+        font-size: 90px;
+        font-weight: bold; 
+        width: 60%;
+    }
