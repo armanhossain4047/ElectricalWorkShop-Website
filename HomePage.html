@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="StyleSheet" href="HomePage.css"/>
+    <link rel="StyleSheet" href="HomePage.css" />
 </head>
+
 <body>
     <div class="header">
         <span id="phone_number">📞 Call : +88 01609-437299</span>
@@ -13,6 +15,7 @@
     </div>
     <div class="nav">
         <nav class="navbar">
+            <span id="web-name">ElectricalWorkShop</span>
             <ul>
                 <li><a href="HomePage.html">Home</a></li>
                 <li><a href="HomePage.html">About</a></li>
@@ -27,15 +30,42 @@
         const headingText = "Mohammad Azim and Mohammad Rakib Electronics Workshop";
         const headingElement = document.querySelector(".company_name");
         let wordIndex = 0;
-    
+
         function typeWord() {
             if (wordIndex < headingText.split(" ").length) {
                 headingElement.innerHTML += headingText.split(" ")[wordIndex] + " ";
                 wordIndex++;
-                setTimeout(typeWord, 400);  
+                setTimeout(typeWord, 400);
             }
         }
         typeWord();
     </script>
+
+    <div class="Services">
+        <h1> Our Services</h1>
+        <div class="Services-card">
+            <div class="card">
+                <h2>Title Here</h2> </br>
+                <img class="card-image" src="Image\Arman.jpg"/>
+                <p>-Description</p>
+            </div>
+
+            <div class="card">
+                <h2>Title Here</h2> </br>
+                <img class="card-image" src="Image\Arman.jpg"/>
+                <p>-Description</p>
+            </div>
+
+            <div class="card">
+                <h2>Title Here</h2> </br>
+                <img class="card-image" src="Image\Arman.jpg"/>
+                <p>-Description</p>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>

@@ -15,14 +15,48 @@
     text-align: right;
     margin-right: 15px; 
 }
+
 .header span{
     font-size: large;
 }
+
 .navbar {
     display: flex;
-    height: 30px; 
+    height: 40px; 
     background-color: aliceblue;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar span{
+    color: blue;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+    animation: slideColor 5s infinite; 
+}
+
+/* Keyframes for the sliding color effect */
+@keyframes slideColor {
+    0% {
+        color: rgb(185, 212, 29);
+        transform: translateX(0);
+    }
+    25% {
+        color: rgb(34, 12, 228);
+        transform: translateX(25px); /* Slide slightly to the right */
+    }
+    50% {
+        color: red;
+        transform: translateX(25px); /* Slide slightly to the right */
+    }
+    75% {
+        color: rgb(22, 1, 1);
+        transform: translateX(25px); /* Slide slightly to the right */
+    }
+    100% {
+        color: rgb(13, 199, 91);
+        transform: translateX(0); /* Return to original position */
+    }
 }
 .navbar ul {     
     padding: 0px 40px; 
@@ -36,7 +70,8 @@
     text-align: right;
 } 
 
-body {
+.nav {
+    height: 650px;
     background-image: url('https://purepng.com/public/uploads/large/businessman-bow.png');
     background-repeat: no-repeat;  
     background-position-x: right;
@@ -50,3 +85,24 @@ body {
         font-weight: bold; 
         width: 60%;
     }
+
+.Services{
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 50px;
+}
+.Services-card{
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+.Services-card .card{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px #a11616;
+}
+.card img{
+    height: 150px;
+    width: 140px;
+}
