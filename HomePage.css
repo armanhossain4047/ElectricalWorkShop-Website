@@ -128,3 +128,22 @@
 .Company-Info{
 	font-size: 30px;
 }
+
+.footer{
+	background-color: green;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+	padding: 10px 10px;
+}
+.footer .footer-card{
+background-color: blue;
+}
+
+.Social-Link{
+	display: inline;
+}
+.Social-Link li{
+	display: inline;
+	padding: 10px;
+}
