@@ -121,3 +121,10 @@
 	font-size: 40px;
 	margin-top: 8px;
 }
+.About{
+	height: auto;
+	background-color: gray;
+}
+.Company-Info{
+	font-size: 30px;
+}
